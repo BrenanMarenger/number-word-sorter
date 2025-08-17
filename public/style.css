@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.input-container {
+  width: 400px;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.input-container h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-container button {
+  padding: 0.8rem 1.6rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background: #0056b3;
+}
+
+.input-container p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.clear-link {
+  display: inline-block;
+  margin-left: 1.2rem;
+  font-size: 0.9rem;
+  color: #007BFF;
+  cursor: pointer;
+  text-decoration: none;
+}
+.clear-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+
+}
+
+/* Results */
+#results {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 300px;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+}
+
+.result-item {
+  background-color: #f1f5f9;
+  border-left: 4px solid #007bff;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #333;
+  word-break: break-word;
+}
+
+.error-item {
+  background-color: #ffe5e5;
+  border-left: 4px solid #dc3545;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #a71d2a;
+  word-break: break-word;
+}
+
+/* Test Case Styles */
+.testcase-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 850px;
+}
+
+.testcard {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 220px;
+}
+
+.testcard h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.testcard h5 {
+  margin: 0 0 0.5rem 0;
+}
+
+.testcard p {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.testcard button {
+  padding: 0.4rem 0.8rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.testcard button:hover {
+  background: #1e7e34;
+}

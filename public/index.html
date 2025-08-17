@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alphabetical Sorting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Input -->
+    <div class="input-container">
+      <div>
+        <h2>Alphabetical Sorting</h2>
+        <p>
+          Enter a comma-separated list of whole numbers below to convert them into words.
+        </p>
+      </div>
+      <input id="inputString" type="text" placeholder="e.g. 1,2,3,11,8999,16" />
+      <div>
+        <button id="submitButton">Sort Text</button>
+        <a href="#" id="clearInput" class="clear-link">Clear</a>
+      </div>
+    </div>
+    <!-- Results -->
+    <div id="results"></div>
+    <!-- Test cases -->
+    <div class="testcase-container">
+      <div class="testcard">
+        <h4>Test #1</h4>
+        <h5>Standard input</h5>
+        <p>Includes negative and positive numbers within -1500 to 1500.</p>
+        <button id="test1">Generate</button>
+      </div>
+      <div class="testcard">
+        <h4>Test #2</h4>
+        <h5>Number over 9000</h5>
+        <p>Includes at least one number above 9000.</p>
+        <button id="test2">Generate</button>
+      </div>
+      <div class="testcard">
+        <h4>Test #3</h4>
+        <h5>String value</h5>
+        <p>Includes at least one invalid non-numeric value.</p>
+        <button id="test3">Generate</button>
+      </div>
+      <div class="testcard">
+        <h4>Test #4</h4>
+        <h5>Funky delimiter</h5>
+        <p>Includes at least one extra spaces or commas around numbers.</p>
+        <button id="test4">Generate</button>
+      </div>
+      <div class="testcard">
+        <h4>Test #5</h4>
+        <h5>Repeated number</h5>
+        <p>Includes at least one duplicate number.</p>
+        <button id="test5">Generate</button>
+      </div>
+      <div class="testcard">
+        <h4>Test #6</h4>
+        <h5>Decimal number</h5>
+        <p>Includes at least one decimal number.</p>
+        <button id="test6">Generate</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
